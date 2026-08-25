@@ -1,0 +1,4 @@
+interface:
+  display_name: "玩法机制设计器"
+  short_description: "从灵感扩展到机制链、核心循环、系统网络与可测试原型方案"
+  default_prompt: "使用 $gameplay-mechanism-designer，把我的灵感扩展成包含机制链、核心循环、系统关系和验证方案的完整玩法。"
