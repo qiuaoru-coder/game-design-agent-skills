@@ -121,4 +121,8 @@ docs/                          user-facing guides
 dist/                          packaged ZIP files
 ~~~
 
+## License
+
+Released under the [MIT License](LICENSE). Methodology attribution and permission notes are recorded in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
 If these Skills help your design work, consider starring the repository. Issues and concrete playtest feedback are welcome.
