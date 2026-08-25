@@ -43,10 +43,6 @@
 
 - Skill 源码：[game-gmt-review/](game-gmt-review/)
 
-### ttcx4-lottery
-
-天天彩选4历史数据更新与娱乐性号码筛选流程。Skill 文件位于仓库根目录。
-
 ## 安装 gameplay-mechanism-designer
 
 方法一：下载 ZIP，解压后把 `gameplay-mechanism-designer` 文件夹放入 Codex 的 Skills 目录。
