@@ -3,6 +3,7 @@
 [中文说明](README.zh-CN.md)
 
 [![Validate skills](https://github.com/qiuaoru-coder/game-design-agent-skills/actions/workflows/validate-skills.yml/badge.svg)](https://github.com/qiuaoru-coder/game-design-agent-skills/actions/workflows/validate-skills.yml)
+[![Latest release](https://img.shields.io/github/v/release/qiuaoru-coder/game-design-agent-skills)](https://github.com/qiuaoru-coder/game-design-agent-skills/releases/latest)
 
 Turn rough game ideas into structured, testable gameplay—and challenge “this will be fun” before production.
 
@@ -53,7 +54,12 @@ cp -R game-design-agent-skills/game-design-reality-check ~/.codex/skills/
 cp -R game-design-agent-skills/game-gmt-review ~/.codex/skills/
 ~~~
 
-Packaged ZIP files are also available in [dist/](dist/).
+Prefer the ready-to-install release packages:
+
+- [Download Gameplay Mechanism Designer ZIP](https://github.com/qiuaoru-coder/game-design-agent-skills/releases/latest/download/gameplay-mechanism-designer.zip)
+- [Download Game Design Reality Check ZIP](https://github.com/qiuaoru-coder/game-design-agent-skills/releases/latest/download/game-design-reality-check.zip)
+
+The same packages are mirrored in [dist/](dist/).
 
 ### 2. Invoke a Skill explicitly
 
