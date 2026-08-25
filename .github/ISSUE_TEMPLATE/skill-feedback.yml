@@ -1,0 +1,60 @@
+name: Skill feedback / Skill 使用反馈
+description: Report an unclear, incorrect, or unhelpful result from an existing skill.
+title: "[Skill feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the skills. Please remove confidential or unreleased project information before submitting.
+        感谢你的反馈。提交前请删除保密内容和未公开项目资料。
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Skill
+      description: Which skill produced the result? / 哪个 Skill 产生了这个结果？
+      options:
+        - gameplay-mechanism-designer
+        - game-design-reality-check
+        - game-gmt-review
+        - Repository, packaging, or documentation
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input / 输入
+      description: What did you ask the skill to do? Redact sensitive details.
+      placeholder: Paste a minimal, non-confidential version of your input.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result / 实际结果
+      description: What was unclear, incorrect, repetitive, impractical, or unsupported?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / 期望结果
+      description: What would have made the output useful?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Prototype or playtest evidence / 原型或试玩证据
+      description: If available, describe what happened in a prototype, review, or playtest.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit / 版本或提交
+      description: Link a release, commit, or state that you used the latest main branch.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation / 隐私确认
+      options:
+        - label: I removed confidential, personal, and unreleased project information. / 我已删除保密、个人及未公开项目信息。
+          required: true
