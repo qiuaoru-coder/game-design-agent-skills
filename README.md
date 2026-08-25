@@ -1,6 +1,6 @@
-# workbuddy-skills
+# Game Design Agent Skills
 
-个人使用的 Codex / WorkBuddy Skills 集合。
+一套面向游戏策划的 Codex Skills：把灵感扩展成可测试的玩法，并用证据检查设计是否真的成立。
 
 ## Skills
 
@@ -54,8 +54,8 @@
 方法二：克隆仓库后复制目录：
 
 ```bash
-git clone https://github.com/qiuaoru-coder/workbuddy-skills.git
-cp -R workbuddy-skills/gameplay-mechanism-designer ~/.codex/skills/
+git clone https://github.com/qiuaoru-coder/game-design-agent-skills.git
+cp -R game-design-agent-skills/gameplay-mechanism-designer ~/.codex/skills/
 ```
 
 安装后可以显式输入 `$gameplay-mechanism-designer` 调用；在玩法设计语境足够明确时，也可以由 Codex 自动选择。
