@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+[![Validate skills](https://github.com/qiuaoru-coder/game-design-agent-skills/actions/workflows/validate-skills.yml/badge.svg)](https://github.com/qiuaoru-coder/game-design-agent-skills/actions/workflows/validate-skills.yml)
+
 把一句模糊灵感扩展成可以制作和验证的玩法，也在投入大量制作前检查“我觉得会好玩”到底是设计逻辑、主观假设，还是已经有证据支持。
 
 这个仓库只收录游戏策划相关的 Codex Skills，主要用于玩法创意、机制设计、策划案审查和最低成本原型规划。它们帮助你把思路说清楚、把系统连起来、把风险变成可验证的问题，但不会隔着文档假装预测游戏一定好玩。

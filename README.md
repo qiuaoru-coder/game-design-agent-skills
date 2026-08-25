@@ -2,6 +2,8 @@
 
 [中文说明](README.zh-CN.md)
 
+[![Validate skills](https://github.com/qiuaoru-coder/game-design-agent-skills/actions/workflows/validate-skills.yml/badge.svg)](https://github.com/qiuaoru-coder/game-design-agent-skills/actions/workflows/validate-skills.yml)
+
 Turn rough game ideas into structured, testable gameplay—and challenge “this will be fun” before production.
 
 This repository contains focused Codex Skills for gameplay ideation, mechanism design, design review, and low-cost prototype planning. The Skills help organize design reasoning; they do not pretend to predict fun from a document.
