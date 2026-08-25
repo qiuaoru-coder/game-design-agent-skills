@@ -109,10 +109,6 @@ Depending on the request, the Skills can produce:
 
 These Skills can improve design completeness and make uncertainty explicit. They cannot prove that a game is fun, predict market success, replace genre expertise, or substitute for prototypes and real-player playtests. Market claims, balance, retention, content volume, and final experience still require external research and evidence.
 
-## Methodology and Attribution
-
-The mechanism knowledge in gameplay-mechanism-designer was structured primarily from the public-sharing editions of the “Game Mechanism Periodic Table” and “Game Mechanism Chain Graph” materials by 六边形老闪（张鹏）, then combined with Goal–Means–Tools reasoning, production constraints, and prototype validation. The original PDFs are not included in this repository.
-
 ## Repository Layout
 
 ~~~text
