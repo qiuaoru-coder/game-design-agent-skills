@@ -37,6 +37,10 @@ prototype → observe → revise
 
 The first Skill expands and connects the design. The second prevents a coherent-looking document from being mistaken for evidence that the game is fun.
 
+## Worked Example
+
+[From “rotate your shadow to move” to a greybox and reality check](examples/shadow-rotation-prototype.md) shows the complete path from one seed through three directions, mechanism-chain design, prototype parameters, an evidence ledger, failure signals, and a decisive playtest.
+
 ## Quick Start
 
 ### 1. Clone the repository
