@@ -23,6 +23,21 @@
 
 ### game-gmt-review
 
+### game-design-reality-check
+
+把“我觉得很好玩”变成可以检查和验证的设计假设。它会区分观察、依据、推导、假设和未知，找出最可能翻车的环节，并设计最低成本的原型和试玩方案。
+
+- Skill 源码：[game-design-reality-check/](game-design-reality-check/)
+- 大白话使用说明：[game-design-reality-check/README.md](game-design-reality-check/README.md)
+- ZIP 安装包：[dist/game-design-reality-check.zip](dist/game-design-reality-check.zip)
+
+最简单的调用方式：
+
+```text
+使用 $game-design-reality-check，
+检查这个游戏设计中哪些结论是事实、推导、假设或未知，
+并告诉我下一步应该怎样验证。
+
 使用 Goal-Means-Tools 框架审查游戏概念、玩法循环和系统策划案。
 
 - Skill 源码：[game-gmt-review/](game-gmt-review/)
