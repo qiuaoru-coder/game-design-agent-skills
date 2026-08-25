@@ -1,61 +1,124 @@
 # Game Design Agent Skills
 
-一套面向游戏策划的 Codex Skills：把灵感扩展成可测试的玩法，并用证据检查设计是否真的成立。
+[中文说明](README.zh-CN.md)
 
-## Skills
+Turn rough game ideas into structured, testable gameplay—and challenge “this will be fun” before production.
 
-### gameplay-mechanism-designer
+This repository contains focused Codex Skills for gameplay ideation, mechanism design, design review, and low-cost prototype planning. The Skills help organize design reasoning; they do not pretend to predict fun from a document.
 
-把一个关键词、道具、角色、画面、机制或粗略游戏想法，扩展成更完整的玩法方向、机制链、核心循环、系统关系和可测试原型。
+## Choose a Skill
 
-- Skill 源码：[gameplay-mechanism-designer/](gameplay-mechanism-designer/)
-- 中文使用说明：[docs/gameplay-mechanism-designer.md](docs/gameplay-mechanism-designer.md)
-- ZIP 安装包：[dist/gameplay-mechanism-designer.zip](dist/gameplay-mechanism-designer.zip)
+| Skill | Use it when you need to | Typical result |
+| --- | --- | --- |
+| [gameplay-mechanism-designer](gameplay-mechanism-designer/) | Expand a keyword, prop, mechanic, image, scene, or rough pitch into playable structure | Distinct gameplay directions, mechanism chains, core loops, system links, scope, and a prototype plan |
+| [game-design-reality-check](game-design-reality-check/) | Test whether a promising design is supported by logic and evidence rather than designer intuition | Evidence ledger, weakest assumption, failure modes, priorities, and the cheapest useful playtest |
+| [game-gmt-review](game-gmt-review/) | Review an existing proposal with the original Goal–Means–Tools framework | Goal–Means–Tools map, broken links, missing tools, and concrete revisions |
 
-最简单的调用方式：
+New projects should usually start with the first two Skills. The GMT Skill is preserved as a narrower legacy review tool.
 
-```text
-使用 $gameplay-mechanism-designer：
+## Recommended Workflow
 
-一把会记住历任主人的钥匙。
-请给我三个不同的玩法方向，并推荐一个。
-```
+~~~text
+design seed
+    ↓
+gameplay-mechanism-designer
+    ↓
+playable structure and prototype scope
+    ↓
+game-design-reality-check
+    ↓
+testable assumptions and playtest signals
+    ↓
+prototype → observe → revise
+~~~
 
-### game-design-reality-check
+The first Skill expands and connects the design. The second prevents a coherent-looking document from being mistaken for evidence that the game is fun.
 
-把“我觉得很好玩”变成可以检查和验证的设计假设。它会区分观察、依据、推导、假设和未知，找出最可能翻车的环节，并设计最低成本的原型和试玩方案。
+## Quick Start
 
-- Skill 源码：[game-design-reality-check/](game-design-reality-check/)
-- 大白话使用说明：[game-design-reality-check/README.md](game-design-reality-check/README.md)
-- ZIP 安装包：[dist/game-design-reality-check.zip](dist/game-design-reality-check.zip)
+### 1. Clone the repository
 
-最简单的调用方式：
-
-```text
-使用 $game-design-reality-check，
-检查这个游戏设计中哪些结论是事实、推导、假设或未知，
-并告诉我下一步应该怎样验证。
-```
-
-### game-gmt-review
-
-使用 Goal-Means-Tools 框架审查游戏概念、玩法循环和系统策划案。
-
-- Skill 源码：[game-gmt-review/](game-gmt-review/)
-
-## 安装 gameplay-mechanism-designer
-
-方法一：下载 ZIP，解压后把 `gameplay-mechanism-designer` 文件夹放入 Codex 的 Skills 目录。
-
-方法二：克隆仓库后复制目录：
-
-```bash
+~~~bash
 git clone https://github.com/qiuaoru-coder/game-design-agent-skills.git
+mkdir -p ~/.codex/skills
+~~~
+
+Copy only the Skills you want:
+
+~~~bash
 cp -R game-design-agent-skills/gameplay-mechanism-designer ~/.codex/skills/
-```
+cp -R game-design-agent-skills/game-design-reality-check ~/.codex/skills/
+cp -R game-design-agent-skills/game-gmt-review ~/.codex/skills/
+~~~
 
-安装后可以显式输入 `$gameplay-mechanism-designer` 调用；在玩法设计语境足够明确时，也可以由 Codex 自动选择。
+Packaged ZIP files are also available in [dist/](dist/).
 
-## 方法论来源
+### 2. Invoke a Skill explicitly
 
-`gameplay-mechanism-designer` 的机制知识框架主要依据六边形老闪（张鹏）的“游戏机制元素周期表”和“游戏机制链图谱”系列资料进行结构化整理，并结合 GMT、原型验证和制作约束形成工作流。具体参考文件中保留了来源说明。本仓库不包含原始 PDF。
+~~~text
+Use $gameplay-mechanism-designer.
+
+Seed: The player can move only by rotating their shadow.
+Experience goal: confusion followed by spatial insight.
+Constraints: PC, 2D, two-person team, two-week prototype.
+Give me three structurally different directions, recommend one,
+then produce the core loop and a 10-minute prototype plan.
+~~~
+
+~~~text
+Use $game-design-reality-check.
+
+Review this proposal without assuming it will be fun.
+Separate observations, design logic, assumptions, and unknowns.
+Find the weakest causal link and design the cheapest test that could disprove it.
+~~~
+
+Chinese prompt examples and plain-language guides:
+
+- [玩法机制设计器：大白话使用说明](docs/gameplay-mechanism-designer.md)
+- [游戏策划现实校验器：大白话使用说明](game-design-reality-check/README.md)
+
+## Best Inputs
+
+A single idea is enough to begin. Better inputs usually include:
+
+- the non-negotiable design seed;
+- what the player repeatedly does and decides;
+- the intended player experience;
+- platform, perspective, session structure, and target audience;
+- references and explicit differences from them;
+- team size, engine, schedule, content budget, and other constraints;
+- what decision you need to make now;
+- for reviews: why you believe the design will be fun and what evidence already exists.
+
+## What You Can Get
+
+Depending on the request, the Skills can produce:
+
+- multiple structurally distinct gameplay directions;
+- player goals, actions, rules, costs, failure, rewards, and progression;
+- mechanism chains, repeatable loops, and connected system networks;
+- graybox scope, state machines, starter parameters, and build order;
+- assumption and evidence ledgers;
+- likely exploits, dominant strategies, misunderstandings, and failure signals;
+- playtest participants, observations, success criteria, revision triggers, and stop conditions.
+
+## Boundaries
+
+These Skills can improve design completeness and make uncertainty explicit. They cannot prove that a game is fun, predict market success, replace genre expertise, or substitute for prototypes and real-player playtests. Market claims, balance, retention, content volume, and final experience still require external research and evidence.
+
+## Methodology and Attribution
+
+The mechanism knowledge in gameplay-mechanism-designer was structured primarily from the public-sharing editions of the “Game Mechanism Periodic Table” and “Game Mechanism Chain Graph” materials by 六边形老闪（张鹏）, then combined with Goal–Means–Tools reasoning, production constraints, and prototype validation. The original PDFs are not included in this repository.
+
+## Repository Layout
+
+~~~text
+gameplay-mechanism-designer/   gameplay generation and prototype planning
+game-design-reality-check/     evidence-based design stress testing
+game-gmt-review/               preserved GMT review Skill
+docs/                          user-facing guides
+dist/                          packaged ZIP files
+~~~
+
+If these Skills help your design work, consider starring the repository. Issues and concrete playtest feedback are welcome.
