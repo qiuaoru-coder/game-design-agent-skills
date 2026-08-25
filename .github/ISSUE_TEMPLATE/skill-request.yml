@@ -1,0 +1,56 @@
+name: Skill request / 新 Skill 建议
+description: Propose a new game-design skill or a substantial new capability.
+title: "[Skill request] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Start from the design problem, not only a name. Explain who needs the skill, what they can provide, and what useful result they should receive.
+        请从要解决的策划问题出发，说明谁会使用、能提供什么输入、希望得到什么结果。
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and user / 问题与用户
+      description: Who has this problem, and in what game-development situation?
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Best possible input / 最理想的输入
+      description: What information can the user realistically provide?
+      placeholder: For example: a mechanic, item, screenshot, target experience, constraints, platform, and prototype budget.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected output / 期望输出
+      description: What concrete deliverable or decision should the skill produce?
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: Why current skills are insufficient / 现有 Skills 为什么不够
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: How to validate it / 如何验证
+      description: What prototype, test, review, or evidence could show that the skill is useful?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and permissions / 来源与授权
+      description: List references and state whether they are original, openly licensed, or explicitly authorized.
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Submission confirmation / 提交确认
+      options:
+        - label: I will not submit confidential material or content I do not have permission to share. / 我不会提交保密资料或无权分享的内容。
+          required: true
