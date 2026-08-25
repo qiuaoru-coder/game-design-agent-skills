@@ -1,0 +1,4 @@
+interface:
+  display_name: "游戏策划现实校验器"
+  short_description: "拆穿未经验证的好玩假设，并给出最低成本验证方案"
+  default_prompt: "使用 $game-design-reality-check，检查这个游戏设计中哪些结论是事实、推导、假设或未知，并告诉我下一步该怎样验证。"
