@@ -3,6 +3,7 @@
 [English](README.md)
 
 [![Validate skills](https://github.com/qiuaoru-coder/game-design-agent-skills/actions/workflows/validate-skills.yml/badge.svg)](https://github.com/qiuaoru-coder/game-design-agent-skills/actions/workflows/validate-skills.yml)
+[![Latest release](https://img.shields.io/github/v/release/qiuaoru-coder/game-design-agent-skills)](https://github.com/qiuaoru-coder/game-design-agent-skills/releases/latest)
 
 把一句模糊灵感扩展成可以制作和验证的玩法，也在投入大量制作前检查“我觉得会好玩”到底是设计逻辑、主观假设，还是已经有证据支持。
 
@@ -53,7 +54,12 @@ cp -R game-design-agent-skills/game-design-reality-check ~/.codex/skills/
 cp -R game-design-agent-skills/game-gmt-review ~/.codex/skills/
 ~~~
 
-也可以在 [dist/](dist/) 下载已经打包的 ZIP 文件。
+也可以直接下载最新的安装包：
+
+- [下载玩法机制设计器 ZIP](https://github.com/qiuaoru-coder/game-design-agent-skills/releases/latest/download/gameplay-mechanism-designer.zip)
+- [下载游戏策划现实校验器 ZIP](https://github.com/qiuaoru-coder/game-design-agent-skills/releases/latest/download/game-design-reality-check.zip)
+
+相同的安装包也保存在 [dist/](dist/) 中。
 
 ### 2. 明确调用 Skill
 
