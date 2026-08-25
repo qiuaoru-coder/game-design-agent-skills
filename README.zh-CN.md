@@ -124,4 +124,8 @@ docs/                          面向使用者的说明文档
 dist/                          ZIP 安装包
 ~~~
 
+## 开源许可
+
+本仓库采用 [MIT License](LICENSE)。方法论来源、作者署名与授权说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
 如果这些 Skill 对你的游戏策划工作有帮助，欢迎给仓库一个 Star，也欢迎通过 Issue 提交真实使用反馈。
